@@ -15,6 +15,12 @@
 		68EBE9152481049E000F6766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EBE9132481049E000F6766 /* LaunchScreen.storyboard */; };
 		68EBE9202481049F000F6766 /* CaroselManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EBE91F2481049F000F6766 /* CaroselManagerTests.swift */; };
 		68EBE92B2481049F000F6766 /* CaroselManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EBE92A2481049F000F6766 /* CaroselManagerUITests.swift */; };
+		68EBE93924810875000F6766 /* CaroselManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EBE93824810875000F6766 /* CaroselManager.swift */; };
+		68EBE93B248108AD000F6766 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EBE93A248108AD000F6766 /* MainCollectionViewCell.swift */; };
+		68EBE93D248109DA000F6766 /* SnappingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EBE93C248109DA000F6766 /* SnappingCollectionViewLayout.swift */; };
+		68EBE93F24810A0D000F6766 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EBE93E24810A0D000F6766 /* HomeViewModel.swift */; };
+		68EBE94224810A7A000F6766 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EBE94124810A7A000F6766 /* DynamicValue.swift */; };
+		68EBE94524810C80000F6766 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EBE94424810C80000F6766 /* UIExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		68EBE9262481049F000F6766 /* CaroselManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaroselManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EBE92A2481049F000F6766 /* CaroselManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaroselManagerUITests.swift; sourceTree = "<group>"; };
 		68EBE92C2481049F000F6766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68EBE93824810875000F6766 /* CaroselManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaroselManager.swift; sourceTree = "<group>"; };
+		68EBE93A248108AD000F6766 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		68EBE93C248109DA000F6766 /* SnappingCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappingCollectionViewLayout.swift; sourceTree = "<group>"; };
+		68EBE93E24810A0D000F6766 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		68EBE94124810A7A000F6766 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		68EBE94424810C80000F6766 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +113,9 @@
 			children = (
 				68EBE9082481049C000F6766 /* AppDelegate.swift */,
 				68EBE90A2481049C000F6766 /* SceneDelegate.swift */,
-				68EBE90C2481049C000F6766 /* ViewController.swift */,
+				68EBE94024810A13000F6766 /* ViewController */,
+				68EBE94324810AB1000F6766 /* Utility */,
+				68EBE93A248108AD000F6766 /* MainCollectionViewCell.swift */,
 				68EBE90E2481049C000F6766 /* Main.storyboard */,
 				68EBE9112481049E000F6766 /* Assets.xcassets */,
 				68EBE9132481049E000F6766 /* LaunchScreen.storyboard */,
@@ -126,6 +140,26 @@
 				68EBE92C2481049F000F6766 /* Info.plist */,
 			);
 			path = CaroselManagerUITests;
+			sourceTree = "<group>";
+		};
+		68EBE94024810A13000F6766 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				68EBE90C2481049C000F6766 /* ViewController.swift */,
+				68EBE93E24810A0D000F6766 /* HomeViewModel.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		68EBE94324810AB1000F6766 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				68EBE93824810875000F6766 /* CaroselManager.swift */,
+				68EBE93C248109DA000F6766 /* SnappingCollectionViewLayout.swift */,
+				68EBE94124810A7A000F6766 /* DynamicValue.swift */,
+				68EBE94424810C80000F6766 /* UIExtension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +295,13 @@
 			files = (
 				68EBE90D2481049C000F6766 /* ViewController.swift in Sources */,
 				68EBE9092481049C000F6766 /* AppDelegate.swift in Sources */,
+				68EBE93F24810A0D000F6766 /* HomeViewModel.swift in Sources */,
 				68EBE90B2481049C000F6766 /* SceneDelegate.swift in Sources */,
+				68EBE94524810C80000F6766 /* UIExtension.swift in Sources */,
+				68EBE93924810875000F6766 /* CaroselManager.swift in Sources */,
+				68EBE93D248109DA000F6766 /* SnappingCollectionViewLayout.swift in Sources */,
+				68EBE93B248108AD000F6766 /* MainCollectionViewCell.swift in Sources */,
+				68EBE94224810A7A000F6766 /* DynamicValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
