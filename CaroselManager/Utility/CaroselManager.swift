@@ -12,9 +12,9 @@ class CaroselManager: NSObject {
     var didTapCell: ((IndexPath) -> ())?
     var collectionView: UICollectionView
     var parent: UIView
-    init(collectionView: UICollectionView) {
+    init(collectionView: UICollectionView, parent: UIView? = nil) {
         self.collectionView = collectionView
-        self.parent = collectionView.superview ?? UIView()
+        self.parent = parent ?? (collectionView.superview ?? UIView())
         super.init()
         collectionView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(panPiece(_:))))
         collectionView.delegate = self
